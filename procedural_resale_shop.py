@@ -15,7 +15,7 @@ from typing import Dict, Optional
     The key is an int representing the item number
     The value is another dictionary containing information about the machine
 """
-inventory : Dict[int, Dict] = {}
+inventory : Dict[int, Dict] = {} #keep unique ID numbers, prevents ID numbers from changing 
 
 itemID = 0 # We'll increment this every time we add a new item 
            # so that we always have a new value for the itemID
