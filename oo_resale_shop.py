@@ -27,6 +27,9 @@ class ResaleShop:
         self.inventory.append(c)
         print("Success!")
 
+    def printinventory(inventory:list):
+        print(inventory)
+
 
 def main():
     myShop: ResaleShop = ResaleShop()
