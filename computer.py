@@ -7,7 +7,6 @@ class Computer:
     operating_system: str
     year_made: int
     price: int
-    new_price: int
     item_id:int 
 
     def __init__(self, description: str, processor_type: str,hard_drive_capacity: int, memory: int, operating_system: str, year_made: int, price: int, item_id: int):
@@ -22,13 +21,13 @@ class Computer:
     
 
     def update_price(self, new_price:int, item_id:int):
-        print("Changing price...")
+        print(f"Changing price of {self.inventory[item_id]}...")
         self.price = new_price 
         print("Price changed successfully!")
 
 
-    def update_OS(self, operating_system: str, new_OS: int):
-        print("Changing OS....")
+    def update_OS(self, operating_system: str, new_OS: int, item_id:int):
+        print(f"Changing OS of {self.inventory[item_id]}....")
         self.operating_system = new_OS
         print("OS changed successfully!")
 
@@ -40,7 +39,7 @@ def main():
     1024, 64,
     "macOS Big Sur", 2013, 1500, 1)
 
-    
+
 
 if __name__ == "__main__":   #only call main if I am running this program directly
     main()

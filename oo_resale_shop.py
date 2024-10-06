@@ -2,13 +2,13 @@ class ResaleShop:
 
     item_ID: int 
     inventory: list
-    new_os: str 
+  
 
 
-    def __init__(self, item_ID: int, inventory:list, new_os:str):
+    def __init__(self, item_ID: int, inventory:list):
         self.item_ID = item_ID 
         self.inventory = [] 
-        self.new_os = new_os
+
 
     def sell (self, c):
         if (c in self.inventory): 
@@ -20,7 +20,8 @@ class ResaleShop:
 
 
     def refurbish (self, c, new_os: str):
-        print("Trying to refurbish item",c)
+        print("Trying to refurbish item...")
+        
         
 
     #GOAL: add c to self.inventory
