@@ -11,14 +11,16 @@ class ResaleShop:
         self.new_os = new_os
 
     def sell (self, c):
-        print("Trying to remove", c, "from inventory...")
-        self.inventory.remove(c)
-        print("Success!")
+        if (c in self.inventory): 
+            print("Trying to remove", c, "from inventory...")
+            self.inventory.remove(c)
+            print("Success!")
+        else: 
+            print(f"{c} is not in the inventory!")
 
 
     def refurbish (self, c, new_os: str):
         print("Trying to refurbish item",c)
-        
         
 
     #GOAL: add c to self.inventory
