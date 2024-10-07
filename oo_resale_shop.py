@@ -1,13 +1,9 @@
 class ResaleShop:
-
-    item_ID: int 
+ 
     inventory: list
-  
 
-
-    def __init__(self, item_ID: int, inventory:list):
-        self.item_ID = item_ID 
-        self.inventory = [] 
+    def __init__(self, inventory:list):
+        self.inventory = ["Computer #1"] 
 
 
     def sell (self, c):
@@ -21,7 +17,7 @@ class ResaleShop:
 
     def refurbish (self, c, new_os: str):
         print("Trying to refurbish item...")
-        
+
         
 
     #GOAL: add c to self.inventory

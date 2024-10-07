@@ -21,13 +21,13 @@ class Computer:
     
 
     def update_price(self, new_price:int, item_id:int):
-        print(f"Changing price of {self.inventory[item_id]}...")
+        print("Changing price...")
         self.price = new_price 
         print("Price changed successfully!")
 
 
     def update_OS(self, operating_system: str, new_OS: int, item_id:int):
-        print(f"Changing OS of {self.inventory[item_id]}....")
+        print("Changing OS...")
         self.operating_system = new_OS
         print("OS changed successfully!")
 
