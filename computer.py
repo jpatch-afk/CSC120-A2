@@ -9,11 +9,11 @@ class Computer:
     item_id:int 
 
     #Constructor
-    def __init__(self, description:str, processor_type:str, hard_drive_capacity:int, memory:int, operating_system:str, year_made:int, price:int, item_id:int):
-        self.description = description
+    def __init__(self, computer_des:str, processor_type:str, hard_drive_capacity:int, computer_memory:int, operating_system:str, year_made:int, price:int, item_id:int):
+        self.computer_des = computer_des
         self.processor_type = processor_type
         self.hard_drive_capacity = hard_drive_capacity
-        self.memory = memory
+        self.computer_memory = computer_memory
         self.operating_system = operating_system
         self.year_made = year_made
         self.price = price
