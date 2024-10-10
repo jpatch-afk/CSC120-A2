@@ -1,8 +1,8 @@
 class Computer:
-    description:str
+    computer_des:str
     processor_type:str
     hard_drive_capacity:int
-    memory:int
+    computer_memory:int
     operating_system:str
     year_made:int
     price:int
