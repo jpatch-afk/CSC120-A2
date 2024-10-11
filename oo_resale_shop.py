@@ -2,9 +2,9 @@ class ResaleShop:
  
     inventory:list
 
-    def __init__(self, inventory:list):
-        self.inventory = inventory
-        inventory = [""] 
+    def __init__(self):
+        self.inventory = []
+         
 
     #Sells a computer, or removes it from the store inventory 
     def sell (self, c, inventory:list):
@@ -19,7 +19,6 @@ class ResaleShop:
     def refurbish (self, c, new_os: str, inventory):
         if (c in inventory):
             print("Trying to refurbish item...") 
-
         else:
             print(f"{c} is not in the inventory!")
 
